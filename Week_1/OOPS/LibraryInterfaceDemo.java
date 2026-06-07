@@ -2,7 +2,7 @@ public class LibraryInterfaceDemo {
 
     public static void main(String[] args) {
 
-        // Test Case 1
+    
         System.out.println("----- Kid User Test Case -----");
 
         KidUser kid1 = new KidUser(10, "Kids");
