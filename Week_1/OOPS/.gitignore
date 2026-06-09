@@ -1,1 +1,9 @@
-#include<iostream>
+# Java compiled files
+*.class
+
+# VS Code settings (if using VS Code)
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
