@@ -1,22 +1,20 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <string>
 using namespace std;
 
 int evalRPN(vector<string> &tokens)
 {
     stack<int> st;
 
-    for (string token : tokens)
+    for (const string &token : tokens)
     {
-
         if (token == "+" || token == "-" ||
             token == "*" || token == "/")
         {
-
             int b = st.top();
             st.pop();
-
             int a = st.top();
             st.pop();
 
@@ -41,8 +39,6 @@ int evalRPN(vector<string> &tokens)
 int main()
 {
     vector<string> tokens = {"2", "1", "+", "3", "*"};
-
     cout << evalRPN(tokens);
-
     return 0;
 }
